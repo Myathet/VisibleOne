@@ -1,0 +1,124 @@
+@import "./variables.scss";
+@import "./mixins";
+
+img {
+  width: 100% !important;
+  height: auto;
+}
+
+.header-title {
+  font-size: 24px !important;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.mui-fa7agg-MuiTypography-root {
+  font-size: 16px !important;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.192);
+}
+
+.logo {
+  width: 240px;
+  height: auto;
+  margin-top: 20px;
+  // @include responsive($size-mobile) {
+  //   width: 130px;
+  // }
+}
+
+.MuiChip-root {
+  border-radius: 8px !important;
+  font-size: 13px !important;
+}
+
+.subtitle-underline {
+  width: 37px;
+  border: 2px solid #333333;
+}
+
+.selectTable {
+  .MuiTable-root {
+    border-collapse: separate !important;
+    border-spacing: 0 7px !important;
+  }
+  .MuiTableCell-root {
+    border-bottom: 0 !important;
+  }
+  .subSelectTable {
+    .MuiTable-root {
+      border-collapse: collapse !important;
+    }
+    .MuiTableCell-root{
+      border-bottom: 1px solid #333333 !important;
+    }
+  }
+}
+
+.multi-select legend span {
+  display: none !important;
+}
+
+.MuiDataGrid-virtualScroller {
+  min-height: 60px !important;
+}
+
+// input box
+.input-form .MuiInput-input {
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+.pickup-filter {
+  top: -5px !important;
+  // background: #fff;
+}
+
+// Detail form
+.detail-input-box {
+  font-size: 15px;
+  color: #707070;
+}
+.detail-input-value {
+  font-size: $text-size;
+  color: #000;
+}
+
+// image carousel
+.zoomed-image-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: pointer;
+}
+.zoomed-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+#noti span {
+  font-size: 0.8rem;
+}
+#noti p {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+#noti .MuiListItemSecondaryAction-root {
+  font-size: 0.8rem;
+}
+#recommend .MuiAvatar-root {
+  width: 85% !important;
+  min-height: 150px !important;
+}
